@@ -40,6 +40,39 @@ export class HomeComponent implements OnInit, OnDestroy {
       currency: 400,
       img: 'https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular-1520x800.png',
     },
+    {
+      index: 5,
+      title: 'GitHub',
+      title2: 'React',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png',
+    },
+    {
+      index: 6,
+      title: 'Git',
+      title2: 'React',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://camo.githubusercontent.com/6eaaae8defc78f268eaf0824350a66a1dfcb6aa77210d3dca069d1d1cefebc53/68747470733a2f2f6769742d73636d2e636f6d2f696d616765732f6c6f676f732f646f776e6c6f6164732f4769742d4c6f676f2d32436f6c6f722e706e67',
+    },
+    {
+      index: 7,
+      title: 'Git Bucket',
+      title2: 'React',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://opengraph.githubassets.com/9e130087285f9e4f9a9c9e8dd9085bfb437017027025f71f8b63ecc340f8517a/gitbucket/gitbucket',
+    },
+    {
+      index: 7,
+      title: 'Bootstrap',
+      title2: 'React',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://www.bootstrapdash.com/wp-content/uploads/2017/08/bootstrap-4-beta-whats-new.jpg',
+    },
+
   ];
 
   public cardFilter: any[] = [];
