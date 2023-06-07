@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { HtmlComponent } from './html/html.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { ViewComponent } from './view/view.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ViewComponent } from './view/view.component';
     AboutComponent,
     HtmlComponent,
     JavascriptComponent,
-    ViewComponent
+    ViewComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
