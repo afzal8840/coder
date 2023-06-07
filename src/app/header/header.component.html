@@ -1,0 +1,75 @@
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <h2>{{ headingChanged }}</h2>
+      <a
+        href="/"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg
+          class="bi me-2"
+          width="40"
+          height="32"
+          role="img"
+          aria-label="Bootstrap">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+        *ngIf="show">
+        <a class="nav-link px-2 text-white" routerLink="/html">HTML</a>
+        <a class="nav-link px-2 text-white" routerLink="/javascript">JAVASCRIPT</a>
+      </ul>
+
+
+      <div class="text-end" *ngIf="showMenu">
+
+      <form
+        class=""
+        role="search"
+        *ngIf="showSearchBar">
+
+        <input
+          #inputSearch
+          type="search"
+          class="btn btn-outline-light me-2"
+          placeholder="Search"
+          style="margin: 2px;"
+          aria-label="Search"/>
+
+        <button
+          type="button"
+          class= "btn btn-danger" style="margin: 3px;"
+          (click)="searchAlert.emit(inputSearch.value)">
+          Search
+        </button>
+
+
+        <button
+        type="button"
+        class="btn btn-primary" style="margin: 3px;"
+        routerLink="/home">
+        Home
+      </button>
+      
+      <button 
+      type="button" 
+      class="btn btn-warning" style="margin: 3px;"
+      routerLink="/header">
+        Header
+      </button>
+
+      <button
+       type="button"
+       class="btn btn-outline-light me-6"
+       routerLink="/about" style="margin-left: 3px;">
+        About
+      </button>
+
+    </form>
+      </div>
+    </div>
+  </div>
+</header>

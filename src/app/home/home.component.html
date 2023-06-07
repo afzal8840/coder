@@ -1,0 +1,49 @@
+<app-header (searchAlerts)="searchText($event)"></app-header>
+<div class="container">
+  <div class="row m-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-body mx-auto first-card">
+          <h5 class="card-title">
+            <button class="btn btn-outline-primary" (click)="addCard()">
+              <div [ngStyle]="{ 'background-color': 'green' }"></div>
+              + Add Card
+            </button>
+            <button class="btn btn-outline-danger" (click)="reset()">
+              Reset
+            </button>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-md-4 col-sm-6"
+      *ngFor="let item of cardFilter; let i = index"
+    >
+      <div class="card">
+        <img [src]="item.img" alt="" />
+        <div class="card-body">
+          <h2 class="card-title">{{ item.title }} {{ item.index }}</h2>
+          <p class="card-title"></p>
+          <b>{{ item.description }}</b>
+          <p>
+            <b>{{ item.currency | currency : "INR" }}</b>
+          </p>
+        </div>
+        <div class="card-footer text-muted text-center">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-sm btn-danger" (click)="remove(i)">
+              Remove
+            </button>
+            <button
+              class="btn btn-sm btn-outline-primary"
+              (click)="changeCardTitle(i)"
+            >
+              changeCardTitle
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
