@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
     {
       index: 4,
-      title: 'Angulars',
+      title: 'Angular',
       title2: 'React',
       description:'Angular is the.',
       currency: 400,
