@@ -65,12 +65,36 @@ export class HomeComponent implements OnInit, OnDestroy {
       img: 'https://opengraph.githubassets.com/9e130087285f9e4f9a9c9e8dd9085bfb437017027025f71f8b63ecc340f8517a/gitbucket/gitbucket',
     },
     {
-      index: 7,
+      index: 8,
       title: 'Bootstrap',
       title2: 'React',
       description:'All Developers Use.',
       currency: 2000,
       img: 'https://www.bootstrapdash.com/wp-content/uploads/2017/08/bootstrap-4-beta-whats-new.jpg',
+    },
+    {
+      index: 9,
+      title: 'Linked in',
+      title2: 'in',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://blog.linkedin.com/apps/settings/wcm/designs/linkedin/katy/global/clientlibs/resources/img/default-share.png',
+    },
+    {
+      index: 10,
+      title: 'twiter',
+      title2: 'tweet',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://www.shutterstock.com/image-photo/kiev-ukraine-may-08-2015-260nw-281364161.jpg',
+    },
+    {
+      index: 11,
+      title: 'instagram',
+      title2: 'insta',
+      description:'All Developers Use.',
+      currency: 2000,
+      img: 'https://www.91-cdn.com/hub/wp-content/uploads/2022/05/Instagram-logo-1200x900.jpg',
     },
 
   ];
